@@ -1,1 +1,35 @@
 * Flatpak Gnuradio Companion
+  A battery included Flatpak package for the GNU Radio Companion.
+** Setup Build Environnement
+*** Flatpak
+    On portage based systems:
+    #+begin_src shell
+      $ sudo emerge flatpak
+    #+end_src
+
+    Ensure that **flatpak-builder** is in you $PATH.
+*** SDK
+    Flatpak applications are built inside a separate environment, called an SDK.
+    SDKs are like the regular runtime that applications run in.
+    The difference is that SDKs also include all the development resources and tools that are required to
+    build an application, such as build and packaging tools, header files, compilers and debuggers.
+
+    #+begin_src shell
+      $ flatpak install flathub org.kde.Sdk//6.2
+    #+end_src
+   
+** Dependencies
+   - LibUSB
+** Modules
+** Building
+   this command will build each module that is listed in the manifest and
+   install it to the **/app** subdirectory, inside the **build-dir** directory.
+   #+begin_src shell
+     $ flatpak-builder build-dir org.gnuradio.Companion.yml
+   #+end_src
+** Testing
+   To verify that the build was successful, run the following:
+   #+begin_src shell
+     $ flatpak-builder --user --install --force-clean build-dir org.gnuradio.Companion.yml
+     $ flatpak run org.gnuradio.Companion
+   #+end_src

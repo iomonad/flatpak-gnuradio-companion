@@ -1,0 +1,13 @@
+---
+name: uhd
+disabled: true
+buildsystem: cmake
+cmake: true
+config-opts:
+- "-DCMAKE_BUILD_TYPE=Release"
+make-args:
+- "-j4"
+sources:
+- type: git
+  url: https://github.com/EttusResearch/uhd.git
+subdir: host

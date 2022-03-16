@@ -1,0 +1,13 @@
+---
+name: libusb
+config-opts:
+- "--disable-udev"
+make-args:
+- "-j4"
+sources:
+- type: git
+  url: https://github.com/libusb/libusb.git
+  branch: v1.0.25
+- type: shell
+  commands:
+  - cp bootstrap.sh bootstrap

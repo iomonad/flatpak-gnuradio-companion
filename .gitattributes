@@ -1,0 +1,4 @@
+*.org linguist-detectable=true
+*.org language=Org Mode
+*.org_archive language=Org Mode
+
