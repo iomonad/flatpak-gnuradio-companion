@@ -1,0 +1,19 @@
+{
+    "name": "python3-pygi",
+    "buildsystem": "simple",
+    "build-commands": [
+        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pygi\" --no-build-isolation"
+    ],
+    "sources": [
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/13/56/f9002eb0c98fc23b29586bf73f7b541e0e334f11d68cbb9831d42f39efbb/pygi-1.0.3-py2.py3-none-any.whl",
+            "sha256": "c124cf550f31d13020edc471f6903e12bfaffbca90900bbf4f2504f3ad631dc8"
+        },
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/2a/dc/97f2b63ef0fa1fd78dcb7195aca577804f6b2b51e712516cc0e902a9a201/python-Levenshtein-0.12.2.tar.gz",
+            "sha256": "dc2395fbd148a1ab31090dd113c366695934b9e85fe5a4b2a032745efd0346f6"
+        }
+    ]
+}

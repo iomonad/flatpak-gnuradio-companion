@@ -31,7 +31,13 @@ modules:
   - deps/volk.yml
   - deps/uhd.yml
   - deps/fftw.yml
+  - deps/spdlog.yml
   - python/python3-packaging.json
   - python/python3-numpy.json
   - python/python3-pygccxml.json
+  - python/python3-pybind11.json
+  - python/python3-pyyaml.json
+  - python/python3-pycairo.json
+  - python/python3-PyGObject.json
+  - python/python3-pygi.json
   - gnuradio.yml
