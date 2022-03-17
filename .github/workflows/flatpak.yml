@@ -20,4 +20,4 @@ jobs:
         run: sudo latpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo \
              && sudo flatpak install flathub org.kde.Sdk//6.2
       - name: Build Release
-        run: sudo ak-builder --usflatpa-builder --user --install --force-clean build-dir org.gnuradio.Companion.yml
+        run: sudo flatpak-builder --user --install --force-clean build-dir org.gnuradio.Companion
