@@ -1,4 +1,4 @@
-* Flatpak Gnuradio Companion
+* Flatpak Gnuradio Companion [[https://github.com/iomonad/flatpak-gnuradio-companion/actions/workflows/flatpak.yml][https://github.com/iomonad/flatpak-gnuradio-companion/actions/workflows/flatpak.yml/badge.svg]]
   A battery included Flatpak package for the GNU Radio Companion.
 ** Setup Build Environnement
 *** Flatpak
@@ -29,4 +29,6 @@
    #+begin_src shell
      $ flatpak-builder --user --install --force-clean build-dir org.gnuradio.Companion.yml
      $ flatpak run org.gnuradio.Companion
+
+
    #+end_src
