@@ -16,10 +16,7 @@
 
     #+begin_src shell
       $ flatpak install flathub org.kde.Sdk//6.2
-    #+end_src
-   
-** Dependencies
-   - LibUSB
+    #+end_src   
 ** Modules
 ** Building
    this command will build each module that is listed in the manifest and

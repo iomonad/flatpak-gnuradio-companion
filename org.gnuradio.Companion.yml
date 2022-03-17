@@ -40,4 +40,8 @@ modules:
   - python/python3-pycairo.json
   - python/python3-PyGObject.json
   - python/python3-pygi.json
+  - python/python3-sip.json
+  - python/python3-pyqt5-sip.json
+  - python/python3-pyqt5.json
+  - deps/qwt.yml
   - gnuradio.yml

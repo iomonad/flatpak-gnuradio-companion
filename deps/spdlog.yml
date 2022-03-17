@@ -6,7 +6,7 @@ config-opts:
   - "-DSPDLOG_FMT_EXTERNAL=OFF"
   - "-DSPDLOG_BUILD_SHARED=ON"
   # - "-DCMAKE_BUILD_TYPE=None"
-  - "-DCMAKE_INSTALL_LIBDIR=/app"
+  # - "-DCMAKE_INSTALL_LIBDIR="
   - "-Wno-dev"
 sources:
 - type: archive
