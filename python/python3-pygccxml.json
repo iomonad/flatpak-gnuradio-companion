@@ -1,0 +1,14 @@
+{
+    "name": "python3-pygccxml",
+    "buildsystem": "simple",
+    "build-commands": [
+        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pygccxml\" --no-build-isolation"
+    ],
+    "sources": [
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/5a/e2/50df1df7bfe1c346a9a85cc727f180822aa215fb986e4beeacc8da4a165e/pygccxml-2.2.1-py2.py3-none-any.whl",
+            "sha256": "c4175d324cdb2e3cd6b4c1ef1d550fe009b7def9a3fe9a650b5878f874d10417"
+        }
+    ]
+}

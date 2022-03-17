@@ -4,7 +4,7 @@
 *** Flatpak
     On portage based systems:
     #+begin_src shell
-      $ sudo emerge flatpak
+      $ sudo emerge flatpak flatpak-builder
     #+end_src
 
     Ensure that **flatpak-builder** is in you $PATH.

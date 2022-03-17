@@ -1,0 +1,14 @@
+---
+name: gr-osmosdr
+buildsystem: cmake
+cmake: true
+config-opts:
+- "-DCMAKE_BUILD_TYPE=Release"
+- "-DENABLE_PYTHON:BOOL=OFF"
+make-args:
+- "-j4"
+sources:
+- type: git
+  url: git://git.osmocom.org/gr-osmosdr
+modules:
+- libhackrf.json

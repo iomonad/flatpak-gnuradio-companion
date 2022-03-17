@@ -6,7 +6,32 @@ app-id: org.gnuradio.Companion
 runtime: org.kde.Sdk
 runtime-version: '6.2'
 sdk: org.kde.Sdk
-command: echo "true"
+separate-locales: false
+rename-desktop-file: gnuradio-companion.desktop
+rename-icon: gnuradio-companion
+command: sh
+cleanup:
+  - "/lib/cmake/"
+  - "/man"
+  - "/share/man"
+  - "/share/gtk-doc"
+  - "/share/doc"
+  - "/share/vala"
+  - "*.la"
+  - "*.a"
+  - "/bin/pygtk*"
+  - "/bin/pygobject*"
+  - "/lib/pygtk"
+  - "/bin/python*-config"
+  - "/bin/pip*"
+  - "/bin/smtpd.py"
 modules:
+  - deps/libusb.yml
   - deps/boost.yml
+  - deps/volk.yml
+  - deps/uhd.yml
+  - deps/fftw.yml
+  - python/python3-packaging.json
+  - python/python3-numpy.json
+  - python/python3-pygccxml.json
   - gnuradio.yml
