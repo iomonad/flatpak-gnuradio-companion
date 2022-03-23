@@ -1,9 +1,13 @@
 ---
 name: uhd
-disabled: true
 buildsystem: cmake
 config-opts:
 - "-DCMAKE_BUILD_TYPE=Release"
+- "-DENABLE_E100=ON"
+- "-DENABLE_E300=ON"
+- "-DENABLE_EXAMPLES=OFF"
+- "-DENABLE_TESTS=OFF"
+- "-DENABLE_UTILS=OFF"
 make-args:
 - "-j4"
 sources:

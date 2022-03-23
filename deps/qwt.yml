@@ -1,14 +1,14 @@
 ---
 name: qwt
-buildsytem: qmake
-no-make-install: true
-build-commands:
-- make -j 4
-- make INSTALL_ROOT=/app install
+buildsystem: qmake
 sources:
 - type: archive
-  url: https://downloads.sourceforge.net/project/qwt/qwt/6.2.0/qwt-6.2.0.tar.bz2
+  url: https://downloads.sourceforge.net/qwt/qwt-6.2.0.tar.bz2
   sha256: 9194f6513955d0fd7300f67158175064460197abab1a92fa127a67a4b0b71530
-- type: file
-  path: ../assets/qwt/qwt-configure
-  dest-filename: configure
+- type: shell
+  commands:
+  - sed -i '\#^\s*QWT_INSTALL_PREFIX# s#=.*#= /app#' qwtconfig.pri
+  - sed -i '\#^QWT_INSTALL_HEADERS# s#include#&/qwt#' qwtconfig.pri
+  - sed -i '\#^QWT_INSTALL_PLUGINS# s#plugins/designer#lib/qt/&#' qwtconfig.pri
+  - sed -i '\#^QWT_INSTALL_FEATURES# s#features#lib/qt/mkspecs/&#' qwtconfig.pri
+  - sed -i "/doc/d" qwt.pro

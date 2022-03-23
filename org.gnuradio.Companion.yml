@@ -4,12 +4,23 @@
 
 app-id: org.gnuradio.Companion
 runtime: org.kde.Sdk
-runtime-version: '6.2'
+runtime-version: 5.15-21.08
 sdk: org.kde.Sdk
 separate-locales: false
 rename-desktop-file: gnuradio-grc.desktop
 rename-icon: gnuradio-grc
 command: gnuradio-companion
+finish-args:
+  - --device=all
+  - --device=dri
+  - --filesystem=home
+  - --persist=.cache/grc_gnuradio
+  - --persist=.gnuradio
+  - --share=ipc
+  - --share=network
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --socket=x11
 cleanup:
   - "/lib/cmake/"
   - "/man"
@@ -32,6 +43,7 @@ modules:
   - deps/uhd.yml
   - deps/fftw.yml
   - deps/spdlog.yml
+  - deps/portaudio.yml
   - python/python3-packaging.json
   - python/python3-numpy.json
   - python/python3-pygccxml.json

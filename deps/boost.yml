@@ -1,7 +1,7 @@
 ---
 name: boost
 config-opts:
-- "--with-libraries=filesystem,system,test,program_options,date_time,regex,thread"
+- "--with-libraries=filesystem,system,test,program_options,date_time,regex,thread,chrono,fiber,atomic,serialization,wave,random"
 sources:
 - type: archive
   url: https://boostorg.jfrog.io/artifactory/main/release/1.78.0/source/boost_1_78_0.tar.bz2
