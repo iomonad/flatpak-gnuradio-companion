@@ -7,9 +7,9 @@ runtime: org.kde.Sdk
 runtime-version: '6.2'
 sdk: org.kde.Sdk
 separate-locales: false
-rename-desktop-file: gnuradio-companion.desktop
-rename-icon: gnuradio-companion
-command: sh
+rename-desktop-file: gnuradio-grc.desktop
+rename-icon: gnuradio-grc
+command: gnuradio-companion
 cleanup:
   - "/lib/cmake/"
   - "/man"

@@ -29,6 +29,4 @@
    #+begin_src shell
      $ flatpak-builder --user --install --force-clean build-dir org.gnuradio.Companion.yml
      $ flatpak run org.gnuradio.Companion
-
-
    #+end_src
