@@ -17,7 +17,6 @@ jobs:
       - name: Setup Flatpak Build Environnement
         run: sudo apt-get update && sudo apt install flatpak flatpak-builder
       - name: Install Kde sdk
-        run: sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo \
-             && sudo flatpak install flathub org.kde.Sdk//6.2
+        run: sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo && sudo flatpak install flathub org.kde.Sdk//6.2 -y --noninteractive
       - name: Build Release
-        run: sudo flatpak-builder --user --install --force-clean build-dir org.gnuradio.Companion
+        run: sudo flatpak-builder --user --install --force-clean build-dir org.gnuradio.Companion.yml
