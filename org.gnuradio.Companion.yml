@@ -57,3 +57,5 @@ modules:
   - python/python3-pyqt5.json
   - deps/qwt.yml
   - gnuradio.yml
+  - deps/libhackrf.yml
+  - extensions/gr-osmosdr.yml

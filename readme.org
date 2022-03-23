@@ -17,9 +17,14 @@
     build an application, such as build and packaging tools, header files, compilers and debuggers.
 
     #+begin_src shell
-      $ flatpak install flathub org.kde.Sdk//6.2
+      $ flatpak install flathub org.kde.Sdk//5.15-21.08
     #+end_src   
 ** Modules
+   - Osmocom
+   - UHD
+** Implemented Boards
+   - Hackrf
+   - Add yours here
 ** Building
    this command will build each module that is listed in the manifest and
    install it to the **/app** subdirectory, inside the **build-dir** directory.
