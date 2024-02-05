@@ -10,4 +10,4 @@ make-args:
 - "-j4"
 sources:
 - type: git
-  url: git://git.osmocom.org/gr-osmosdr
+  url: https://gitea.osmocom.org/sdr/gr-osmosdr.git

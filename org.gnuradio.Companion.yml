@@ -55,6 +55,8 @@ modules:
   - python/python3-sip.json
   - python/python3-pyqt5-sip.json
   - python/python3-pyqt5.json
+  - python/python3-pybind11.json
+  - python/python3-matplotlib.json
   - deps/qwt.yml
   - gnuradio.yml
   - deps/libhackrf.yml
