@@ -7,5 +7,6 @@ make-args:
 - "-j4"
 sources:
 - type: git
-  url: https://github.com/mossmann/hackrf.git
+  branch: main
+  url: https://github.com/greatscottgadgets/hackrf
 subdir: host/libhackrf
